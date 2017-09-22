@@ -8,3 +8,16 @@ venues = [
 { address: "44 Quebec Road", city: "Toronto", wheelchair_accessible: true, capacity: 200 },
 { address: "10 Spruce Avenue Ouest", city: "Montreal", wheelchair_accessible: false, capacity: 525 }
 ]
+
+
+def venue_search(list_of_venues)
+  compatible_venues = []
+  list_of_venues.each do |venue|
+    if venue[:wheelchair_accessible] == true && venue[:city] == "Toronto" && venue[:capacity] >= 150
+      compatible_venues << venue
+    end
+  end
+  compatible_venues
+end
+
+puts venue_search(venues)
