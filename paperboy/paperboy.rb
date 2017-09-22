@@ -1,13 +1,13 @@
 require "./paperboy-class.rb"
 
-tommy = Paperboy.new("Tommy")
+jane = Paperboy.new("Jane")
 
-puts tommy.quota
-puts tommy.deliver(101, 160)
-puts tommy.earnings
-puts tommy.report
+puts jane.quota
+puts jane.deliver(101, 160)
+puts jane.earnings
+puts jane.report
 
-puts tommy.quota
-puts tommy.deliver(1, 75)
-puts tommy.earnings
-puts tommy.report
+puts jane.quota
+puts jane.deliver(1, 75)
+puts jane.earnings
+puts jane.report
