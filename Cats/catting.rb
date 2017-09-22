@@ -5,3 +5,6 @@ mishka = Cat.new("Mishka", "mice", 8)
 
 puts vince.meal_time
 puts mishka.meal_time
+
+puts vince.meow
+puts mishka.meow
