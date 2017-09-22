@@ -1,8 +1,8 @@
 class BankAccount
 
-  def initialize(balance, interest_rate)
+  def initialize(balance)
     @balance = balance
-    @interest_rate = interest_rate
+    @interest_rate = 1.04
   end
 
   def depoist(money_in)
@@ -11,6 +11,10 @@ class BankAccount
 
   def withdraw(money_out)
     @balance -= money_out
+  end
+
+  def gain_interest
+    @balance  *= @interest_rate 
   end
 
 end
