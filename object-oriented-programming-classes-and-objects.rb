@@ -13,13 +13,12 @@ player1 = Player.new
 
 puts player1.level_up
 puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
-puts player1.collect_treasure
+puts player1.do_battle(12)
+puts player1.do_battle(12)
+puts player1.do_battle(12)
+puts player1.do_battle(12)
+puts player1.do_battle(12)
+puts player1.do_battle(12)
+puts player1.do_battle(12)
+puts player1.do_battle(12)
+puts player1.do_battle(12)

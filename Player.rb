@@ -25,11 +25,21 @@ class Player
     if @health_points <= 0
       @lives -= 1
       @health_points = 10
+      puts "you lost a life, only #{ @lives } left"
+      if @lives <= 0
+        restart
+        puts "try again"
+      end
     end
+    "you took #{damage} points of damage and are on #{ @health_points } HP"
   end
 
   def restart
-
+    if @lives <= 0
+      @lives = 5
+      @gold_coins = 0
+      @health_points = 10
+    end
   end
 
 end
