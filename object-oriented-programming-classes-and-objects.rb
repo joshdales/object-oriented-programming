@@ -1,4 +1,5 @@
 require "./BankAccount.rb"
+require "./Player.rb"
 
 account1 = BankAccount.new(100.00)
 
